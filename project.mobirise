@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-03 15:15",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://debank-usa.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://debank-usa.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "dv1ktrbb5r",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DeBank™ | Home Official Site",
+        "meta_descr": "WebThe real Web3-native messenger and the best web3 portfolio tracker that covers all your tokens, DeFi protocols, NFTs across all EVM chains.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://debank.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/debank.png\" alt=\"DeBank\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0i8WKLQlI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://debank.com/\" class=\"text-primary\">DeBank</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Rise of <a href=\"https://debank-usa.github.io/\" class=\"text-primary\">DeBank</a>: Transforming Finance Through Decentralization</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In recent years, the financial landscape has witnessed a paradigm shift with the emergence of decentralized banking, often referred to as \"Debanking.\" This revolutionary concept challenges traditional financial systems by leveraging blockchain technology to create more inclusive, transparent, and efficient financial services. In this article, we will explore the key aspects of debanking, its impact on the financial industry, and the potential benefits it brings to users worldwide.\n<br>\n<br>Understanding <a href=\"https://debank-usa.github.io/\" class=\"text-primary\">Debank</a>:\n<br>\n<br>Debanking fundamentally revolves around the decentralization of financial services. Unlike traditional banking systems that rely on centralized authorities to facilitate transactions and manage accounts, debanking leverages blockchain and smart contract technologies to create a peer-to-peer network. This decentralized approach eliminates the need for intermediaries, providing users with greater control over their financial assets.\n<br>\n<br>Key Features of <a href=\"https://debank-usa.github.io/\" class=\"text-primary\">Debank</a>:\n<br>\n<br>Blockchain Technology:\n<br>Debanking relies on blockchain, a distributed ledger that records transactions across a network of computers. This decentralized and tamper-resistant technology ensures transparency and security in financial transactions.\n<br>\n<br>Smart Contracts:\n<br>Smart contracts, self-executing contracts with the terms of the agreement directly written into code, play a crucial role in debanking. They automate and enforce the execution of predefined rules, eliminating the need for intermediaries and reducing the risk of fraud.\n<br>\n<br>Tokenization:\n<br>Debanking often involves the use of tokens, digital assets representing real-world assets like currency or commodities. Tokenization enables fractional ownership, making it easier for individuals to invest in a wide range of assets.\n<br>\n<br>Impact on the Financial Industry:\n<br>\n<br>Reduced Dependence on Intermediaries:\n<br>Debanking disrupts the traditional banking model by removing intermediaries such as banks and financial institutions. This not only reduces transaction costs but also minimizes the risk of central points of failure.\n<br>\n<br>Financial Inclusion:\n<br>One of the most significant advantages of debanking is its potential to bring financial services to the unbanked and underbanked populations. With decentralized systems, individuals without access to traditional banking can participate in the global economy.\n<br>\n<br>Transparency and Security:\n<br>Blockchain's transparency ensures that all transactions are recorded and visible on the distributed ledger. This transparency, coupled with cryptographic security measures, enhances the overall security of financial transactions.\n<br>\n<br>Challenges and Risks:\n<br>\n<br>Regulatory Uncertainty:\n<br>The decentralized nature of debanking poses challenges for regulatory authorities. Governments worldwide are grappling with how to regulate and oversee these emerging technologies to ensure consumer protection and prevent illicit activities.\n<br>\n<br>Scalability Issues:\n<br>Some decentralized platforms face scalability challenges, leading to slower transaction speeds and higher fees during periods of high demand. Scalability solutions are actively being developed to address these issues.\n<br>\n<br>User Education:\n<br>The transition to debanking requires users to understand and navigate new technologies. Educating users about the benefits and risks of decentralized finance is crucial for widespread adoption.\n<br>\n<br>Potential Benefits for Users:\n<br>\n<br>Ownership and Control:\n<br>Debanking empowers users by providing greater ownership and control over their financial assets. Users have direct access to their funds without relying on third-party institutions.\n<br>\n<br>Global Accessibility:\n<br>With debanking, financial services become accessible to anyone with an internet connection. This inclusivity breaks down geographical barriers and fosters global economic participation.\n<br>\n<br>Cost Efficiency:\n<br>The elimination of intermediaries and the automation of processes through smart contracts can significantly reduce transaction costs, making financial services more affordable for users.\n<br>\n<br>Conclusion:\n<br>\n<br>Debanking represents a transformative shift in the financial industry, challenging the traditional notions of banking and finance. While the concept is still evolving, its potential to provide financial inclusion, transparency, and control to users cannot be ignored. As regulatory frameworks continue to adapt, and technological solutions address existing challenges, debanking may very well become a cornerstone of the future financial landscape, reshaping the way individuals and businesses interact with their finances.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0i8XwlBnZ",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
